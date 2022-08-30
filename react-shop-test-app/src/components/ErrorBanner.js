@@ -1,16 +1,14 @@
-import React from "react";
+import styled from "styled-components";
 
-function ErrorBanner({ message }) {
-  let errorMessage = message || "에러입니다.";
+const ErrorBanner = ({ message }) => {
+    const errorMessage = message || "에러입니다.";
 
-  return (
-    <div
-      data-testid="error-banner"
-      style={{ backgroundColor: "red", color: "white" }}
-    >
-      {errorMessage}
-    </div>
-  );
-}
+    return <ErrorBox data-testid="error-banner">{errorMessage}</ErrorBox>;
+};
+
+const ErrorBox = styled.div`
+    background-color: red;
+    color: white;
+`;
 
 export default ErrorBanner;

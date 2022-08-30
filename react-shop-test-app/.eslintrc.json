@@ -1,5 +1,5 @@
 {
-    "plugins": ["testing-library","jest-dom"],
+    "plugins": ["testing-library", "jest-dom"],
     "extends": [
         "react-app",
         "react-app/jest",
@@ -7,3 +7,7 @@
         "plugin:jest-dom/recommended"
     ]
 }
+
+// package.json에 위치한 eslint 삭제 및 Root Directory에 .eslintrc.json 생성
+// "plugin:testing-library/react" : 테스트 라이브러리 중 React에 관한 규칙 설정
+// "plugin:jest-dom/recommended" : jest-dom 모든 규칙 중 추천된 규칙만 설정

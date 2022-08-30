@@ -7,7 +7,7 @@ test("displays product images from server", async () => {
     render(<Type orderType="products" />);
 
     // * product로 끝나는 alt 속성 이름을 가진 <img /> 노드들을 비동기로 가져오기
-    // findby = get + waitfor 이기 때문에 async + awiat가 필요하다.
+    // findby = get + waitfor 이기 때문에 async + await가 필요하다.
     const productImages = await screen.findAllByRole("img", {
         name: /product$/i,
     });
